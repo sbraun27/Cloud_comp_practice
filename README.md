@@ -1,2 +1,2 @@
-# Cloud_comp_practice
-Practice on cloud computing services
+# FizzBuzz_TDD
+Repo to practice Test-Driven Development using the FizzBuzz problem
