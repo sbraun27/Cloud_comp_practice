@@ -75,7 +75,7 @@ def european_option(S: float, K: float, r: float, T: float, sigma: float, type="
     returns the price of a european option as float rounded to 4 decimal places. 
     """
 
-    if S < 0 or K < 0:
+    if S < 1e-4 or K < 1e-4:
         return None
 
     if type.lower() == "c":
@@ -84,8 +84,3 @@ def european_option(S: float, K: float, r: float, T: float, sigma: float, type="
         return _euro_put(S, K, T, r, sigma)
     else:
         return None
-
-
-if __name__ == "__main__":
-    print(european_option(
-        S=100, K=-100, r=0.01, T=100, sigma=0.01))
